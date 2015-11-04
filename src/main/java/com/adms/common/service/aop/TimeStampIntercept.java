@@ -27,7 +27,6 @@ public class TimeStampIntercept {
 			+ " || execution(* com.adms.*.service.*Service.add*(..)) "
 			+ " || execution(* com.adms.**.service.*Service.add*(..)) "
 			+ " || execution(* com.adms.**.service.**.*Service.add*(..))")
-	//com.adms.**.service.*Service.add*()
 	public void beforeInsert(JoinPoint jp) {
 		Object[] objects = jp.getArgs();
 		int objNum = -1;
